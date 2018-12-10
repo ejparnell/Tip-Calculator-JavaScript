@@ -23,8 +23,7 @@ function totalAmount(billTotal, selectedPer, numPpl) {
     let totalAmount = tipAmount + billTotal;
     //Does the OCD calculations by rounding the total bill amount up to make a whole number. Then taking that number and subtracting it from the total bill, which gives you a new tip amount that makes the bill total to be a whole number.
     let ocdTotalAmount = Math.ceil(totalAmount);
-    let ocdTipAmount = ocdTotalAmount - totalAmount;
-    let newTip = new Number((ocdTotalAmount - billTotal)).toFixed(2);
+    let newTip = new Number((ocdTotalAmount - billTotal).toFixed(2));
     
     let billInfo = {
         prevBillTotal: billTotal,
