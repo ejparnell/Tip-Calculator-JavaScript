@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip calculator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="bg">
+    <div class="inputCard">
+        <h1>
+            Tip Calculator
+        </h1>
+        <label for="totalBill">Total Bill</label> <br>
+        <div class="inputCenter">
+            <input id='totalBillInput' type="text" name="totalBill" class="billInput" />
+        </div>
+
+        <label for="tip">Tip Percent</label> <br>
+        <div class="tipPer">
+            <input id='tip10Input' class="tipPer" type="button" name="tip10" value="10%" onclick="handlePercentClick('10')"/>
+            <input id='tip15Input' class="tipPer" type="button" name="tip15" value="15%" onclick="handlePercentClick('15')"/>
+            <input id="tip20Input" class="tipPer" type="button" name="tip20" value="20%" onclick="handlePercentClick('20')"/>
+        </div>
+
+        <label for="split">Split</label> <br>
+        <div>
+            <input id='numPplInput' class="split" type="text" name="split"/>
+        </div>
+    </div>
+    
+    <div class="resultCard">
+        <div>
+            <h2>OCD Bill (per person):</h2><span id="ocdBill"></span>
+        </div>
+        <div>
+            <h2>OCD Tip Amount (per person):</h2><span id="ocdtTipAmount"></span>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</div>
+</body>
+
+</html>

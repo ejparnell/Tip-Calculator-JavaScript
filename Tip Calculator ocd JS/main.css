@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body {
+  margin: 0;
+  font-family: 'Ubuntu';
+}
+
+.inputCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 36%, 50% 64%, 0 36%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 36%, 50% 64%, 0 36%);
+  background-color: #c60de2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputCard h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputCard label {
+  font-size: 2rem;
+}
+
+.inputCard .billInput {
+  width: 75vw;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.inputCard .tipPer {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputCard .split {
+  font-size: 1.5rem;
+  width: 15vw;
+}
+
+.resultCard {
+  position: fixed;
+  bottom: .5rem;
+  width: 100vw;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.resultCard .bottomH2 {
+  margin-bottom: 0;
+}
+
+.resultCard span {
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=main.css.map */
