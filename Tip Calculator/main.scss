@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+$colors: (
+    primary: #c60de2,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu';
+}
+
+
+.inputCard {
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0% 0%, 100% 0, 100% 36%, 50% 64%, 0 36%);
+    background-color: color(primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    align-items: center;
+
+    h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+
+    .billInput {
+        width: 75vw;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .tipPer {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .split {
+        font-size: 1.5rem;
+        width: 15vw;
+    }
+}
+
+.resultCard {
+    position: fixed;
+    bottom: .5rem;
+    width: 100vw;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    .bottomH2 {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-size: 1.5em
+    }
+}
